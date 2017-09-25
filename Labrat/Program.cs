@@ -11,7 +11,8 @@ namespace Labrat
         static void Main(string[] args)
         {
             //Labrat.Lab01.Tehtava13();
-            Labrat.Lab02.KiuasAjo.TestaaKiuas();
+            //Labrat.Lab03.Tehtava1.TestiPeti.Testaus();
+            Labrat.Lab03.Tehtava2.TestiHissi.Testaus();
         }
     }
 }
