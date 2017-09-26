@@ -127,12 +127,12 @@ namespace Labrat
                     {
                         volumeuusi = value;
                     }
-                    else if (value < 1)
+                    else if (value < 0)
                     {
                         Console.WriteLine("Liian pieni äänenvoimakkuus! Asetetaan minimiin: 0");
                         volumeuusi = 0;
                     }
-                    else if (value > 5)
+                    else if (value > 100)
                     {
                         Console.WriteLine("Liian suuri äänenvoimakkuus! Asetetaan maksimiin: 100");
                         volumeuusi = 100;
