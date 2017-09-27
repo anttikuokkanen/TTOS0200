@@ -218,7 +218,9 @@ namespace Labrat
                 employee.Name = "Taneli";
                 employee.Profession = "Muurari";
                 employee.Salary = 2600;
+                Console.WriteLine("Employee:");
                 Console.WriteLine(employee.ToString());
+                Console.WriteLine("");
 
                 Boss bossi = new Boss();
                 bossi.Name = "Frederik";
@@ -226,9 +228,12 @@ namespace Labrat
                 bossi.Salary = 4800;
                 bossi.Car = "Mersu";
                 bossi.Bonus = 600;
+                Console.WriteLine("Boss:");
                 Console.WriteLine(bossi.ToString());
+                Console.WriteLine("");
 
                 employee.Salary = 2900;
+                Console.WriteLine("Employee:");
                 Console.WriteLine(employee.ToString());
 
 
@@ -236,7 +241,7 @@ namespace Labrat
 
         }
 
-        /*public class Tehtava5
+        public class Tehtava5
         {
             class Vehicle
             {
@@ -259,9 +264,104 @@ namespace Labrat
 
                 public override string ToString()
                 {
-                    return 
+                    return "Name: " + Name + " Model: " + Model + " ModelYear: " + Year + " Color: " + Color;
                 }
             }
-        }*/
+
+            class Bike: Vehicle
+            {
+                public bool Gear { get; set; }
+                public string GearName { get; set; }
+
+                public Bike()
+                {
+                }
+
+                public Bike(string name, string model, int year, string color, bool gear, string gearname)
+                    : base(name, model, year, color)
+                {
+                    Gear = gear;
+                    GearName = gearname;
+                }
+
+                public override string ToString()
+                {
+                    return base.ToString() + " GearWheels: " + Gear + " GearName: " + GearName;
+                }
+
+
+            }
+
+            class Boat: Vehicle
+            {
+                public string BoatType { get; set; }
+                public int SeatCount { get; set; }
+
+                public Boat()
+                {
+                }
+
+                public Boat(string name, string model, int year, string color, string boattype, int seatcount)
+                    : base(name, model, year, color)
+                {
+                    BoatType = boattype;
+                    SeatCount = seatcount;
+                }
+
+                public override string ToString()
+                {
+                    return base.ToString() + " BoatType: " + BoatType + " SeatCount: " + SeatCount;
+                }
+
+            }
+
+            public static void TestClasses()
+            {
+                Bike bike1 = new Bike();
+                bike1.Name = "Jopo";
+                bike1.Model = "Street";
+                bike1.Year = 2012;
+                bike1.Color = "Blue";
+                bike1.Gear = false;
+                bike1.GearName = "";
+                Console.WriteLine("Bike 1 info:");
+                Console.WriteLine(bike1.ToString());
+                Console.WriteLine("");
+
+                Bike bike2 = new Bike();
+                bike2.Name = "Yosemite";
+                bike2.Model = "Mountain";
+                bike2.Year = 1999;
+                bike2.Color = "Black";
+                bike2.Gear = true;
+                bike2.GearName = "Biltema";
+                Console.WriteLine("Bike 2 info:");
+                Console.WriteLine(bike2.ToString());
+                Console.WriteLine("");
+
+                Boat boat1 = new Boat();
+                boat1.Name = "Flipper";
+                boat1.Model = "305d";
+                boat1.Year = 1988;
+                boat1.Color = "White";
+                boat1.BoatType = "Motorboat";
+                boat1.SeatCount = 9;
+                Console.WriteLine("Boat 1 info:");
+                Console.WriteLine(boat1.ToString());
+                Console.WriteLine("");
+
+                Boat boat2 = new Boat();
+                boat2.Name = "Terhi";
+                boat2.Model = "375";
+                boat2.Year = 1995;
+                boat2.Color = "Brown";
+                boat2.BoatType = "Rowboat";
+                boat2.SeatCount = 3;
+                Console.WriteLine("Boat 2 info:");
+                Console.WriteLine(boat2.ToString());
+                Console.WriteLine("");
+
+            }
+        }
     }
 }
