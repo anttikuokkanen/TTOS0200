@@ -13,7 +13,8 @@ namespace Labrat
             //Labrat.Lab01.Tehtava13();
             //Labrat.Lab03.Tehtava1.TestiPeti.Testaus();
             //Labrat.Lab03.Hissi.TestiHissi();
-            Labrat.Lab03.Vahvistin.TestiVahvistin();
+            //Labrat.Lab03.Vahvistin.TestiVahvistin();
+            Labrat.Lab03.Tehtava4.TestClasses();
         }
     }
 }
