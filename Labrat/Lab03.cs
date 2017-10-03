@@ -363,5 +363,129 @@ namespace Labrat
 
             }
         }
+
+        public class Radio
+        {
+            public bool Power { get; set; }
+
+            public Radio()
+            {
+            }
+
+            private int volume;
+            public int Volume
+            {
+                get
+                {
+                    return volume;
+                }
+                set
+                {
+                    if (value >= 0 && value <= 9)
+                    {
+                        volume = value;
+                    }
+                    else if (value < 0)
+                    {
+                        Console.WriteLine("Asetetaan volume minimiin: 0");
+                        volume = 0;
+                    }
+                    else if (value > 9)
+                    {
+                        Console.WriteLine("Asetetaan volume maksimiin: 9");
+                        volume = 9;
+                    }
+                }
+            }
+
+            private double frequency;
+            public double Frequency
+            {
+                get
+                {
+                    return frequency;
+                }
+                set
+                {
+                    if (value >= 2000 && value <= 26000)
+                    {
+                        frequency = value;
+                    }
+                    else if (value < 2000)
+                    {
+                        Console.WriteLine("Asetetaan taajuus minimiin: 2000");
+                        frequency = 2000;
+                    }
+                    else if (value > 9)
+                    {
+                        Console.WriteLine("Asetetaan taajuus maksimiin: 26 000");
+                        frequency = 26000;
+                    }
+                }
+            }
+            public int SetVolume()
+            {
+                Console.Write("Anna uusi äänenvoimakkuus (0-9) > ");
+                Volume = int.Parse(Console.ReadLine());
+                Console.WriteLine("Volume on nyt " + Volume);
+                return Volume;
+            }
+
+            public double SetFrequency()
+            {
+                Console.Write("Anna uusi taajuus 2000.0 - 26000.0 > ");
+                Frequency = double.Parse(Console.ReadLine());
+                Console.WriteLine("Taajuus on nyt " + Frequency);
+                return Frequency;
+            }
+            public bool SetPower()
+            {
+                do
+                {
+                    Console.Write("Laitatko radion päälle? 1=Päälle, 0=Pois > ");
+                    int number = int.Parse(Console.ReadLine());
+                    if (number == 1)
+                    {
+                        Console.WriteLine("Radio on päällä");
+                        Power = true;
+                    }
+                    else if (number == 0)
+                    {
+                        Console.WriteLine("Radio on pois päältä");
+                        Power = false;
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Väärä komento");
+                    }
+                } while (Power != true);
+                return Power;
+
+            }
+
+            public static void TestRadio()
+            {
+                Radio yamaha = new Radio();
+                yamaha.SetPower();
+                while (yamaha.Power == true)
+                {
+                    Console.WriteLine("Valitse toiminto: 1: Aseta volume. 2: Aseta taajuus. 0: Sammuta radio");
+                    int number = int.Parse(Console.ReadLine());
+                    if (number == 1)
+                    {
+                        yamaha.SetVolume();
+                    }
+                    else if (number == 2)
+                    {
+                        yamaha.SetFrequency();
+                    }
+                    else if (number == 0)
+                    {
+                        yamaha.SetPower();
+                    }
+                }
+            }
+        }
     }
 }
