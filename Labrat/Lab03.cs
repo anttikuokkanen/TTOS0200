@@ -487,5 +487,124 @@ namespace Labrat
                 }
             }
         }
+
+        public class Opiskelija
+        {
+            class Item
+            {
+                public string Name { get; set; }
+                public int Year { get; set; }
+                public int Price { get; set; }
+
+                public Item()
+                {
+                }
+
+                public Item(string name,int year, int price)
+                {
+                    Name = name;
+                    Year = year;
+                    Price = price;
+                }
+
+                public override string ToString()
+                {
+                    return "Nimi: " + Name + " Vuosi: " + Year + " Hinta: " + Price + " euroa";
+                }
+
+            }
+
+            class Technology : Item
+            {
+                public string Model { get; set; }
+                public double Screen { get; set; }
+
+                public Technology()
+                {
+                }
+
+                public Technology(string name, int year, int price, string model, double screen)
+                    :base (name, year, price)
+                {
+                    Model = model;
+                    Screen = screen;
+                }
+                public override string ToString()
+                {
+                    return base.ToString() + " Malli: " + Model + " Näyttö: " + Screen + " tuumaa";
+                }
+            }
+
+            class Movies : Item
+            {
+                public int Length { get; set; }
+
+                public Movies()
+                {
+                }
+
+                public Movies(string name, int year, int price, int length)
+                    :base (name, year, price)
+                {
+                    Length = length;
+                }
+                public override string ToString()
+                {
+                    return base.ToString() + " Pituus: " + Length + " minuuttia";
+                }
+            }
+
+            public static void TestClasses()
+            {
+                Technology laptop = new Technology();
+                laptop.Name = "Lenovo";
+                laptop.Year = 2011;
+                laptop.Price = 200;
+                laptop.Model = "Thinkpad";
+                laptop.Screen = 14;
+                Console.WriteLine("Kannettavan info:");
+                Console.WriteLine(laptop.ToString());
+                Console.WriteLine("");
+
+                Technology phone = new Technology();
+                phone.Name = "Xiaomi";
+                phone.Year = 2015;
+                phone.Price = 180;
+                phone.Model = "Redmi 3S";
+                phone.Screen = 4.5;
+                Console.WriteLine("Puhelimen info:");
+                Console.WriteLine(phone.ToString());
+                Console.WriteLine("");
+
+                Movies movie1 = new Movies();
+                movie1.Name = "Star Wars: Episode IV - A New Hope";
+                movie1.Year = 1977;
+                movie1.Price = 5;
+                movie1.Length = 125;
+                Console.WriteLine("Elokuva 1:n info:");
+                Console.WriteLine(movie1.ToString());
+                Console.WriteLine("");
+
+                Movies movie2 = new Movies();
+                movie2.Name = "Star Wars: Episode V - The Empire Strikes Back";
+                movie2.Year = 1980;
+                movie2.Price = 6;
+                movie2.Length = 127;
+                Console.WriteLine("Elokuva 2:n info:");
+                Console.WriteLine(movie2.ToString());
+                Console.WriteLine("");
+
+                Movies movie3 = new Movies();
+                movie3.Name = "Star Wars: Episode VI - Return of the Jedi";
+                movie3.Year = 1983;
+                movie3.Price = 5;
+                movie3.Length = 134;
+                Console.WriteLine("Elokuva 3:n info:");
+                Console.WriteLine(movie3.ToString());
+                Console.WriteLine("");
+
+            }
+
+        }
     }
 }

@@ -16,7 +16,8 @@ namespace Labrat
             //Labrat.Lab03.Vahvistin.TestiVahvistin();
             //Labrat.Lab03.Tehtava4.TestClasses();
             //Labrat.Lab03.Tehtava5.TestClasses();
-            Labrat.Lab03.Radio.TestRadio();
+            //Labrat.Lab03.Radio.TestRadio();
+            Labrat.Lab03.Opiskelija.TestClasses();
         }
     }
 }
