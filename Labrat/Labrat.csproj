@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab0405.cs" />
     <Compile Include="Lab03.cs" />
-    <Compile Include="Lab02.cs" />
-    <Compile Include="Lab01.cs" />
+    <Compile Include="Lab0102.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

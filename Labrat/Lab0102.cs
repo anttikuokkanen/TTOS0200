@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Labrat
 {
-    class Lab01
+    class Lab0102
     {
         public static void Tehtava1 ()
         {
