@@ -11,12 +11,12 @@ namespace Labrat
         static void Main(string[] args)
         {
             //Labrat.Lab0102.Tehtava13();
-            //Labrat.Lab03.Tehtava1.TestiPeti.Testaus();
-            //Labrat.Lab03.Hissi.TestiHissi();
-            //Labrat.Lab03.Vahvistin.TestiVahvistin();
-            //Labrat.Lab03.Tehtava4.TestClasses();
-            //Labrat.Lab03.Tehtava5.TestClasses();
-            //Labrat.Lab03.Radio.TestRadio();
+            //Labrat.Lab0405.Tehtava1.TestiPeti.Testaus();
+            //Labrat.Lab0405.Hissi.TestiHissi();
+            //Labrat.Lab0405.Vahvistin.TestiVahvistin();
+            //Labrat.Lab0405.Tehtava4.TestClasses();
+            //Labrat.Lab0405.Tehtava5.TestClasses();
+            //Labrat.Lab0405.Radio.TestRadio();
             Labrat.Lab0405.Opiskelija.TestClasses();
         }
     }
