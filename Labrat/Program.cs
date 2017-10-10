@@ -17,7 +17,9 @@ namespace Labrat
             //Labrat.Lab0405.Tehtava4.TestClasses();
             //Labrat.Lab0405.Tehtava5.TestClasses();
             //Labrat.Lab0405.Radio.TestRadio();
-            Labrat.Lab0405.Opiskelija.TestClasses();
+            //Labrat.Lab0405.Opiskelija.TestClasses();
+            //Labrat.Lab06.Tehtava1.TestClasses();
+            Labrat.Lab06.Tehtava4.TestClasses();
         }
     }
 }
