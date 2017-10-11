@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lab07.cs" />
     <Compile Include="Lab0405.cs" />
     <Compile Include="Lab03.cs" />
     <Compile Include="Lab0102.cs" />
