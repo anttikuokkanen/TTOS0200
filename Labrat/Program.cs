@@ -20,7 +20,9 @@ namespace Labrat
             //Labrat.Lab0405.Opiskelija.TestClasses();
             //Labrat.Lab06.Tehtava1.TestClasses();
             //Labrat.Lab06.Tehtava4.TestClasses();
-            Labrat.Lab07.MiniASIO.TestaaMiniASIO();
+            //Labrat.Lab07.MiniASIO.TestaaMiniASIO();
+            //Labrat.Lab07.Tehtava2.TestaaCD();
+            Labrat.Lab07.Tehtava3.TestaaPakka();
         }
     }
 }
