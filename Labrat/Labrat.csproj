@@ -47,6 +47,7 @@
     <Compile Include="Lab03.cs" />
     <Compile Include="Lab0102.cs" />
     <Compile Include="Lab06.cs" />
+    <Compile Include="Lab08.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
