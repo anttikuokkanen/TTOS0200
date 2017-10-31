@@ -52,5 +52,54 @@ namespace Labrat
                 }
             }
         }
+
+        public class Tehtava2
+        {
+            public static void TestaaTehtava2()
+            {
+                try
+                {
+                    string filupath = @"D:\Temp";
+                    string filu = filupath + @"\nimet.txt";
+                    if (File.Exists(filu))
+                    {
+                        int nimet = 0;
+                        List<string> teksti = File.ReadAllLines(filu).ToList();
+                        var q = teksti.GroupBy(x => x)
+                            .Select(g => new { Value = g.Key, Count = g.Count() });
+
+                        foreach (var x in q)
+                        {
+                            nimet++;
+                        }
+
+                        Console.WriteLine("Löytyi {0} riviä, ja {1} nimeä", teksti.Count(), nimet);
+                        foreach (var x in q)
+                        {
+                            Console.WriteLine("Nimi " + x.Value + " esiintyy " + x.Count + " kertaa");
+                        }
+
+                        teksti.Sort();
+
+                        Console.WriteLine("\nLöytyi {0} riviä, ja {1} nimeä sortattuna", teksti.Count(), nimet);
+                        foreach (var x in q)
+                        {
+                            Console.WriteLine("Nimi " + x.Value + " esiintyy " + x.Count + " kertaa");
+                        }
+                    }
+                }
+
+                catch (FileNotFoundException ex)
+                {
+                    Console.WriteLine("Tiedostoa ei löydy");
+                }
+
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+        }
     }
 }
