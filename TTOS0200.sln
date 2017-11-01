@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOdemot", "OOdemot\OOdemot.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labrat", "Labrat\Labrat.csproj", "{0BD0B2FF-43EB-42A2-AF3D-9A6ACB632264}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VK44", "VK44\VK44.csproj", "{31D2FBF5-3474-4382-85F8-DBDABEA95706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0BD0B2FF-43EB-42A2-AF3D-9A6ACB632264}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BD0B2FF-43EB-42A2-AF3D-9A6ACB632264}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BD0B2FF-43EB-42A2-AF3D-9A6ACB632264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D2FBF5-3474-4382-85F8-DBDABEA95706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D2FBF5-3474-4382-85F8-DBDABEA95706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D2FBF5-3474-4382-85F8-DBDABEA95706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D2FBF5-3474-4382-85F8-DBDABEA95706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
