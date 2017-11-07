@@ -24,7 +24,9 @@ namespace Labrat
             //Labrat.Lab07.Tehtava2.TestaaCD();
             //Labrat.Lab07.Tehtava3.TestaaPakka();
             //Labrat.Lab08.Tehtava1.TestaaTehtava1();
-            Labrat.Lab08.Tehtava2.TestaaTehtava2();
+            //Labrat.Lab08.Tehtava2.TestaaTehtava2();
+            //Labrat.Lab09.Tehtava1.TestaaNoppa();
+            Labrat.Lab09.Tehtava2.TestaaOstokset();
         }
     }
 }

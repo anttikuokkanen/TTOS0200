@@ -66,7 +66,7 @@ namespace Labrat
                         int nimet = 0;
                         List<string> teksti = File.ReadAllLines(filu).ToList();
                         var q = teksti.GroupBy(x => x)
-                            .Select(g => new { Value = g.Key, Count = g.Count() });
+                           .Select(g => new { Value = g.Key, Count = g.Count() });
 
                         foreach (var x in q)
                         {
