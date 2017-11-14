@@ -25,55 +25,6 @@ namespace Lab10._2
             InitializeComponent();
         }
 
-        
-
-        /*private void cmbValuutat_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ListBoxItem li = (ListBoxItem)cmbValuutat.SelectedItem;
-            string testi = li.Content.ToString();
-
-            if (cmbValuutat.Text == "Suomi Eur")
-            {
-                txbMaksuvaluutta.Text = "Yhdysvallat, USD";
-            }
-
-            if (cmbValuutat.Text == "Yhdysvallat USD")
-            {
-                txbMaksuvaluutta.Text = "Suomi, EUR";
-            }
-
-            
-            
-
-            //string summa = txtOstettavasumma.Text;
-            //int valuutta;
-            //valuutta = (ListBoxItem)cmbValuutat.SelectedIndex;
-            if (cmbValuutat.SelectedIndex == 0)
-            {
-                txbMaksettavasumma.Text = "Tähän maksettava summa";
-            }
-
-            if (cmbValuutat.Text == "Yhdysvallat, USD")
-            {
-                //maksusumma = muunnettuosto * 0.8997;
-                //string muunnettumaksu = maksusumma.ToString("0.00");
-                //txbMaksettavasumma.Text = muunnettumaksu;
-                txbMaksuvaluutta.Text = "Suomi, Eur";
-            }
-
-            if (cmbValuutat.Text == "Suomi, EUR")
-            {
-                //maksusumma = muunnettuosto * 0.8997;
-                //string muunnettumaksu = maksusumma.ToString("0.00");
-                //txbMaksettavasumma.Text = muunnettumaksu;
-                txbMaksuvaluutta.Text = "Yhdysvallat, USD";
-            }
-            
-
-
-
-        }*/
-
         private void txtOstettavasumma_TextChanged(object sender, TextChangedEventArgs e)
         {
             try
