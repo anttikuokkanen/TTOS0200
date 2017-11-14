@@ -50,7 +50,10 @@ namespace Lab10._2
                     }
                 }
                 else
+                {
                     txtOstettavasumma.Text = "0";
+                }
+                    
             }
             catch (Exception ex)
             {
