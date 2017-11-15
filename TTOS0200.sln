@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab10.1", "Lab10.1\Lab10.1.csproj", "{E1173218-1458-41EA-8009-2C74DD4A69A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab10.2", "Lab10.2\Lab10.2.csproj", "{77F3FA8C-2DC0-4223-AD6A-4DA1740B7E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotalliDemo", "AutotalliDemo\AutotalliDemo.csproj", "{319C2931-0BC5-4F04-BD3E-50885C02BA18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{77F3FA8C-2DC0-4223-AD6A-4DA1740B7E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77F3FA8C-2DC0-4223-AD6A-4DA1740B7E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77F3FA8C-2DC0-4223-AD6A-4DA1740B7E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319C2931-0BC5-4F04-BD3E-50885C02BA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319C2931-0BC5-4F04-BD3E-50885C02BA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319C2931-0BC5-4F04-BD3E-50885C02BA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319C2931-0BC5-4F04-BD3E-50885C02BA18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
