@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutotalliDemo", "AutotalliD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.1", "Lab11.1\Lab11.1.csproj", "{C21A86AF-A56C-414E-8DAE-90BE34DC35D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.2", "Lab11.2\Lab11.2.csproj", "{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.3", "Lab11.3\Lab11.3.csproj", "{AED21735-7001-4984-94FF-CA951B62F728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{C21A86AF-A56C-414E-8DAE-90BE34DC35D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C21A86AF-A56C-414E-8DAE-90BE34DC35D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C21A86AF-A56C-414E-8DAE-90BE34DC35D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED21735-7001-4984-94FF-CA951B62F728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED21735-7001-4984-94FF-CA951B62F728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED21735-7001-4984-94FF-CA951B62F728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED21735-7001-4984-94FF-CA951B62F728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
