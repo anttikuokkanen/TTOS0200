@@ -18,7 +18,7 @@
         <Button x:Name="btnDraw" Content="Draw" HorizontalAlignment="Left" Margin="67,130,0,0" VerticalAlignment="Top" Width="56" Click="btnDraw_Click"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="166,130,0,0" VerticalAlignment="Top" Width="56" Click="btnClear_Click"/>
         <ScrollViewer Margin="0,199,0,0">
-            <TextBlock x:Name="txbNumbers" HorizontalAlignment="Stretch" Margin="15,0,12,5" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" MinHeight="135" MinWidth="292" Width="{Binding ElementName=Scroller, Path=ViewportWidth}" Height="{Binding ElementName=Scroller, Path=ViewportWidth}"/>
+            <TextBlock x:Name="txbNumbers" HorizontalAlignment="Stretch" Margin="15,0,12,5" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" MinHeight="135" MinWidth="292" />
         </ScrollViewer>
         <Label Content="Random numbers" HorizontalAlignment="Left" Margin="22,173,0,0" VerticalAlignment="Top" Width="159"/>
 
