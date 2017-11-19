@@ -27,92 +27,99 @@ namespace Lab11._3
 
         private void btnDraw_Click(object sender, RoutedEventArgs e)
         {
-            int draws;
-            Random rng = new Random();
-            if (int.TryParse(txtDraws.Text, out draws))
+            try
             {
-                if (cmbGame.Text == "Lotto")
+                int draws;
+                Random rng = new Random();
+                if (int.TryParse(txtDraws.Text, out draws))
                 {
-                    int raw = 0;
-                    string rivit = null;
-                    for (int y = 0; y < draws; y++)
+                    if (cmbGame.Text == "Lotto")
                     {
-                        List<int> lotterynumbers = new List<int>();
-                        int number;
-                        for (int i = 0; i < 7; i++)
+                        int raw = 0;
+                        string rivit = null;
+                        for (int y = 0; y < draws; y++)
                         {
-                            do
+                            List<int> lotterynumbers = new List<int>();
+                            int number;
+                            for (int i = 0; i < 7; i++)
                             {
-                                number = rng.Next(1, 41);
-                            } while (lotterynumbers.Contains(number));
-                            lotterynumbers.Add(number);
+                                do
+                                {
+                                    number = rng.Next(1, 41);
+                                } while (lotterynumbers.Contains(number));
+                                lotterynumbers.Add(number);
+                            }
+                            raw++;
+                            rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
                         }
-                        raw++;
-                        rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
-                    }
-                   
-                    txbNumbers.Text = rivit;
-                }
 
-                else if (cmbGame.Text == "Viking Lotto")
-                {
-                    int raw = 0;
-                    string rivit = null;
-                    for (int y = 0; y < draws; y++)
-                    {
-                        List<int> lotterynumbers = new List<int>();
-                        int number;
-                        for (int i = 0; i < 6; i++)
-                        {
-                            do
-                            {
-                                number = rng.Next(1, 49);
-                            } while (lotterynumbers.Contains(number));
-                            lotterynumbers.Add(number);
-                        }
-                        raw++;
-                        rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
+                        txbNumbers.Text = rivit;
                     }
 
-                    txbNumbers.Text = rivit;
-
-                }
-
-                else if (cmbGame.Text == "Eurojackpot")
-                {
-                    int raw = 0;
-                    string rivit = null;
-                    for (int y = 0; y < draws; y++)
+                    else if (cmbGame.Text == "Viking Lotto")
                     {
-                        List<int> lotterynumbers = new List<int>();
-                        int number;
-                        for (int i = 0; i < 5; i++)
+                        int raw = 0;
+                        string rivit = null;
+                        for (int y = 0; y < draws; y++)
                         {
-                            do
+                            List<int> lotterynumbers = new List<int>();
+                            int number;
+                            for (int i = 0; i < 6; i++)
                             {
-                                number = rng.Next(1, 51);
-                            } while (lotterynumbers.Contains(number));
-                            lotterynumbers.Add(number);
+                                do
+                                {
+                                    number = rng.Next(1, 49);
+                                } while (lotterynumbers.Contains(number));
+                                lotterynumbers.Add(number);
+                            }
+                            raw++;
+                            rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
                         }
-                        for (int i = 0; i < 2; i++)
-                        {
-                            do
-                            {
-                                number = rng.Next(1, 11);
-                            } while (lotterynumbers.Contains(number));
-                            lotterynumbers.Add(number);
-                        }
-                        raw++;
-                        rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
+
+                        txbNumbers.Text = rivit;
+
                     }
 
-                    txbNumbers.Text = rivit;
-                }
+                    else if (cmbGame.Text == "Eurojackpot")
+                    {
+                        int raw = 0;
+                        string rivit = null;
+                        for (int y = 0; y < draws; y++)
+                        {
+                            List<int> lotterynumbers = new List<int>();
+                            int number;
+                            for (int i = 0; i < 5; i++)
+                            {
+                                do
+                                {
+                                    number = rng.Next(1, 51);
+                                } while (lotterynumbers.Contains(number));
+                                lotterynumbers.Add(number);
+                            }
+                            for (int i = 0; i < 2; i++)
+                            {
+                                do
+                                {
+                                    number = rng.Next(1, 11);
+                                } while (lotterynumbers.Contains(number));
+                                lotterynumbers.Add(number);
+                            }
+                            raw++;
+                            rivit += "Raw " + raw + ": " + String.Join(", ", lotterynumbers.ToArray()) + "\n";
+                        }
 
+                        txbNumbers.Text = rivit;
+                    }
+
+                }
+                else
+                {
+                    txbNumbers.Text = "";
+                }
             }
-            else
+            catch (Exception ex)
             {
-                txbNumbers.Text = "";
+                MessageBox.Show(ex.Message);
             }
         }
 
