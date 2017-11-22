@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.2", "Lab11.2\Lab11.2.csproj", "{711CE2FD-DBFB-4310-8A35-64C95E59ADA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.3", "Lab11.3\Lab11.3.csproj", "{AED21735-7001-4984-94FF-CA951B62F728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMK", "AMK\AMK.csproj", "{FA1B429A-19AF-46D2-BC05-D720ABB2038B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{AED21735-7001-4984-94FF-CA951B62F728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AED21735-7001-4984-94FF-CA951B62F728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AED21735-7001-4984-94FF-CA951B62F728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1B429A-19AF-46D2-BC05-D720ABB2038B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1B429A-19AF-46D2-BC05-D720ABB2038B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1B429A-19AF-46D2-BC05-D720ABB2038B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1B429A-19AF-46D2-BC05-D720ABB2038B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
